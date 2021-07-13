@@ -1,78 +1,83 @@
-
-body{
-    background-color: rgb(243, 241, 126);
-    margin:20px 100px;
-    padding: 20px;
+body {
+  background-color: rgb(243, 241, 126);
+  margin: 20px 100px;
+  padding: 20px;
 }
-h4{
-    font-size: 30px;
-    font-weight: bolder;
-    color: #d9534f;
-   
+h4 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #d9534f;
 }
 
 /* search bar design */
-.search-container{
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-    width: 700px;
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  width: 700px;
 }
 
-.search-bar{
-    justify-content: center;
+.search-bar {
+  justify-content: center;
 }
-.search-container i{
-padding-right: 20px;
+.search-container i {
+  padding-right: 20px;
 }
 
-.cookImg{
-    padding-top: 50px;
-    text-align: center;
+.cookImg {
+  padding-top: 50px;
+  padding-left: 350px;
+  /* max-width: 100% */
 }
 
 /* meal result photo */
-.meals{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-    margin-top: 20px;
+.meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
 }
 
-.meal{
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
+.meal {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
 }
 
-/* .meal img{
-    padding: 10px;
-    border-radius: 30px;
-} */
+.meal h5 {
+  padding: 20px;
+  margin: 10px;
+  color: #d9534f;
+}
 
-.meal h5{
-    padding: 20px;
-    margin: 10px;
-    color: #d9534f;
-    /* text-align: center;   */
+/* recipe detail img */
+#recipe-detail img {
+  height: 350px;
+  width: 350px;
+  border: 10px solid white;
+  border-radius: 25px;
+}
+
+#recipe-detail i.fas {
+  color: #d9534f;
 }
 
 /* responsiveness for site */
- @media(max-width:800px) {
-     .meals{
-         grid-template-columns: repeat(3,1fr);
-     }    
- }
-
- @media(max-width:700px) {
-    .meals{
-        grid-template-columns: repeat(2,1fr);
-    }    
+@media (max-width: 800px) {
+  .meals {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media(max-width:500px) {
-    .meals{
-        grid-template-columns: repeat(2,1fr);
-    }    
+@media (max-width: 700px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
